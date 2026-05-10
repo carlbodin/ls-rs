@@ -28,7 +28,7 @@ cargo run -- --count-children .
 
 ## Notes
 
-- Long listing mode prints file size plus a UTC timestamp in `YYYY-MM-DD HH:MM:SS` form.
+- Long listing mode prints local time in `YYYY-MM-DD HH:MM:SS` form, with UTC used only as a fallback if local conversion fails.
 - Human-readable sizes use binary units such as `K`, `M`, and `G`.
 - `--count-children` shows the number of visible direct entries in each directory section.
 - The implementation remains dependency-free so it can build cleanly on different platforms.
